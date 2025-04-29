@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #fff8f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #ffc0cb;
+    padding: 1rem 2rem;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Logo centered */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Side Menu (hidden by default) */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* hidden off screen */
+    width: 200px;
+    height: 100%;
+    background-color: #ffc0cb;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+  
+  /* Active side menu (when hamburger clicked) */
+  .side-menu.active {
+    left: 0;
+  }
+  
+  /* Nav Links inside Side Menu */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 900px;
+    margin: 2rem auto; /* centers the main element horizontally */
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  main img {
+    width: 750px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #ffc0cb;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Cupcake Grid for Cupcakes Page */
+  .cupcake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  .cupcake {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .cupcake img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  
+  
