@@ -47,7 +47,7 @@
   .side-menu {
     position: fixed;
     top: 0;
-    left: -250px; /* hidden off screen */
+    left: -250px;
     width: 200px;
     height: 100%;
     background-color: #ffc0cb;
@@ -61,7 +61,6 @@
     left: 0;
   }
   
-  /* Nav Links inside Side Menu */
   .nav-links {
     list-style: none;
     display: flex;
@@ -121,5 +120,21 @@
     max-width: 100%;
     border-radius: 6px;
   }
-  
-  
+
+.logo {
+    font-family: "roca", sans-serif;
+font-weight: 900;
+font-style: normal;
+}
+
+  h1 {
+    font-family: "roca", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+  h3, p {
+    font-family: "roca", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
